@@ -25,9 +25,25 @@ body {
     flex: 1 1 auto;
 }
 
-.top > h1 {
-    flex: 1 0 auto;
-    font-size: 24px;
+.signup-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.top > a {
+    flex: 0 0 auto;
+    font-size: 18px;
+    margin-bottom: 40px;;
+    align-self: center;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.top > img {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
 }
 
 .footer {
@@ -45,11 +61,46 @@ body {
 }
 
 .content {
-    background-color: azure;
+    background-color: hsla(215, 24%, 90%, 1);
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    color: #F9FAF8;
+    color: #1f2937;
+}
+
+.content-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content-info > h2 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.image-holder {
+    display: flex;
+    gap: 40px;
+}
+
+.image-content {
+    width: 154px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+.image-content > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid #1F2937;
 }
 
 .main-info {
@@ -58,7 +109,71 @@ body {
     justify-content: center;
 }
 
-a {
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 800px;
+    padding: 20px;
+}
+
+.quote > h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.quote > p {
+    font-weight: 600;
+    align-self: flex-end;
+}
+
+.quote-container {
+    background-color: hsla(215, 24%, 85%, 1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.signup-background > .signup-container {
+    margin: 0;
+    background-color: #3882f6;
+    color: #F9FAF8;
+    width: 1000px;
+    padding: 15px 100px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.secondary-text {
     color: #E5E7EB;
+}
+
+a {
     margin: 0 10px;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #3882f6;
+    color: #F9FAF8;
+    border-style: solid;
+    align-self: center;
+}
+
+.signup-container > button {
+    border-color: #F9FAF8;
+}
+
+.main-signup > button {
+    border-color: #1F2937;
 }
