@@ -9,19 +9,29 @@ body {
     background-color: #1F2937;
 }
 
-.header {
+.flex-column {
+    display: flex;
     flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
+}
+
+.header {
+    width: 1200px;
     font-size: 18px;
+    padding: 15px 100px;
+    box-sizing: border-box;
 }
 
 .header > * {
     display: flex;
 }
 
-.main-signup {
+.sign-up-text {
     flex: 1 1 auto;
 }
 
@@ -50,9 +60,6 @@ body {
     align-self: center;
     flex: 0 1 80px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer, .header {
@@ -63,16 +70,10 @@ body {
 .content {
     background-color: hsla(215, 24%, 90%, 1);
     flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
     color: #1f2937;
 }
 
 .content-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     padding: 20px;
 }
 
@@ -89,10 +90,6 @@ body {
 .image-content {
     width: 154px;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
     text-align: center;
 }
 
@@ -110,20 +107,19 @@ body {
 }
 
 .quote {
-    display: flex;
-    flex-direction: column;
     align-self: center;
     width: 800px;
     padding: 20px;
 }
 
 .quote > h2 {
-    font-size: 3rem;
-    font-weight: 100;
+    font-size: 2.5rem;
+    font-weight: 10;
     margin-bottom: 0;
 }
 
 .quote > p {
+    font-size: 1.75rem;
     font-weight: 600;
     align-self: flex-end;
 }
@@ -131,25 +127,27 @@ body {
 .quote-container {
     background-color: hsla(215, 24%, 85%, 1);
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .signup-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-grow: 1;
 }
 
-.signup-background > .signup-container {
+.signup-container {
     margin: 0;
-    background-color: #3882f6;
     color: #F9FAF8;
     width: 1000px;
     padding: 15px 100px;
+}
+
+.signup-container.secondary-signup {
+    background-color: #3882f6;
     box-sizing: border-box;
     border-radius: 10px;
+}
+
+.dark-background {
+    background-color: #1F2937;
 }
 
 .secondary-text {
@@ -174,6 +172,6 @@ button {
     border-color: #F9FAF8;
 }
 
-.main-signup > button {
+.sign-up-text > button {
     border-color: #1F2937;
 }
